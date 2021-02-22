@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>学科診断ページ</title>
+ <link rel="stylesheet" href="css/my-style3.css" type="text/css">
+ <!-- Javascriptを使用する -->
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+    <div class ="logo top:10px;">
+    <h1><a href="file:///C:/Users/hasumi%20kotaro/Desktop/陰で座プロ/期末用Webサイト/index.html"><img src="image/og_img.jpg" width="350px" height="55px"  alt="TDU学科診断"></a></h1>
+    </div>
+    <ul> 
+    <li><a href="#link">| TDU学科診断とは |</a></li>
+    <li><a href="#link">| 学科一覧 |</a></li>
+    <li><a href="#">| お問い合わせ |</a></li>
+    <li><a href="https://www.dendai.ac.jp/">| 大学のサイトはこちらから |</a></li>
+       </ul>
+    </header>
+
+    <ul>
+      <li class="fadeInUp"><img src="image/goal.jpg" width="1650" height="750" alt=""></li>
+      <li class="fadeInUp"><img src="image/FIpage.jpg"  width="1650" height="750" alt=""></li>
+    </ul>
+    <!-- フェードインアニメーション -->
+    <script>
+      $(function(){
+  function animation(){
+    $('.fadeInUp').each(function(){
+      //ターゲットの位置を取得
+      var target = $(this).offset().top;
+      //スクロール量を取得
+      var scroll = $(window).scrollTop();
+      //ウィンドウの高さを取得
+      var windowHeight = $(window).height();
+      //ターゲットまでスクロールするとフェードインする
+      if (scroll > target - windowHeight){
+        $(this).css('opacity','1');
+        $(this).css('transform','translateY(0)');
+      }
+    });
+  }
+  animation();
+  $(window).scroll(function (){
+    animation();
+  });
+});
+    </script>
+
+      <h1>あなたにおすすめの学科は、情報メディア学科！</h1>
+      <p><font size="5">情報メディア学科では</font></p>
+      <p><font size="5">クリエイティブな視点とテクノロジの視点から</font></p>
+      <p><font size="5">情報メディア学を総合的に学べる学科！</font></p>
+    <header>
+        <ul> 
+            <li><a href="https://www.im.dendai.ac.jp/">| 詳しくはこちら |</a></li>
+        </ul>
+    </header>
+    
+    </body>
+    </html> 
