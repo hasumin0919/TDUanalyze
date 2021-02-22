@@ -1,0 +1,130 @@
+/* my-styleと同じ（header ul a :hoverまで） */
+header{
+  z-index: 10;
+  background-color: #e0ffff;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  background-color: #ffd700;
+  text-align: center;
+ }
+
+.logo h1{
+margin-left: 0px;
+}
+
+ul {
+　　overflow:hidden;
+　　list-style:none;
+　　margin: 0 auto;
+　　z-index: 20;
+}
+ 
+li {
+  display: inline-block;
+  padding: 20px 10px 20px 10px;
+}
+ 
+a {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fff;
+    color: #00f;
+}
+ 
+header ul a :hover {
+    background-color: #f7a;
+}
+
+/*以下全てカードの設定（主要の部分のみ説明する） */
+.card-deck {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* カード全体の背景・枠の設定 */
+.card {
+  display: flex;
+  background-color: #fff;
+  color: #212121;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+}
+
+/* カードの大きさ設定 */
+.card-size {
+  width: 480px;
+  margin: 0 20px 20px;
+  border: 1px solid #dfdfdf;
+}
+
+/* 画像と分野の相互位置設定 */
+.card__header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__title {
+  padding: 1rem 1rem 0;
+  font-size: 1.25rem;
+  order: 1;
+}
+
+/* 写真の位置設定 */
+.card__thumbnail {
+  margin: 0;
+  order: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.card__text {
+  font-size: 1.25rem;
+}
+
+.card__text.-number {
+  text-align: right;
+}
+
+.card__footer {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+/* カード内ボタンの設定*/
+.button {
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+}
+/* 色と場所 */
+.button.-compact {
+  padding: .3rem 1rem;
+  border-radius: .25rem;
+  background-color: #26a69a;
+  color: #fff;
+  font-weight: bold;
+}
+/* カーソル時の設定 */
+.button.-compact:hover,
+.button.-compact:focus {
+  background-color: #80cbc4;
+}
