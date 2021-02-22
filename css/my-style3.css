@@ -1,0 +1,55 @@
+/* my-styleと同じ（ header ul a :hoverまで）*/
+header{
+    z-index: 10;
+    background-color: #e0ffff;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  h1 {
+    background-color: #ffd700;
+    text-align: center;
+   }
+  
+  .logo h1{
+  margin-left: 0px;
+  }
+  
+  ul {
+  　　overflow: hidden;
+  　　list-style: none;
+  　　margin: 0 auto;
+  　　z-index: 20;
+     padding : 0;
+  }
+   
+  li {
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+  }
+   
+  a {
+      display: block;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #fff;
+      color: #00f;
+  }
+   
+  header ul a :hover {
+      background-color: #f7a;
+  }
+
+  /* フェードインの設定（完全に透明の状態から開始） */
+  .fadeInUp {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: 1s;
+  }
+
+  p{
+    text-align: center
+    }
